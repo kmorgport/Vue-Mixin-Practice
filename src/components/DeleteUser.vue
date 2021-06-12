@@ -13,6 +13,12 @@ import alertMixin from '../mixins/alert.js';
 import UserAlert from './UserAlert.vue';
 
 export default {
+  data(){
+    return {
+      //if you have identical namespaces, the component's values take priority
+      alertIsVisible: true
+    }
+  },
   //components cannot be shared thru mixins 
   components: {
     UserAlert,
